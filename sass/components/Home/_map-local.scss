@@ -1,0 +1,13 @@
+#map-local{
+    background: linear-gradient(rgb(231, 226, 226), rgba(167, 161, 161, 0.794));
+    width: 100%;
+    height: 77vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 40px;
+}
+#map {
+    height: 700px;
+  }

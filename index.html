@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pet</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./collaboration.html">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://kit.fontawesome.com/5341e8c383.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="content-header">
+        <div class="logo"></div>
+        <nav class="menu-navegation">
+            <ul class="nav-list">
+                <img class="logo" src="img/logo.png" alt="">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="services"><a>Services</a></a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/hamburguer.png" alt=""></button>
+            </div>
+        </nav>
+        
+        <div class="mobile-menu">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="services"><a>Services</a></a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </div>
+       
+    </header>
+        <section class="first-section">
+            <div class="container-first-section">
+                <h1>"Give the Gift of Love: Adopt a Puppy"</h1>
+                <p class="copy">
+                    Adopt, don't shop! Give a loving home to a furry friend in need.<br>
+                    Make a difference in a shelter animal's life by choosing adoption.<br>
+                    Your kindness can change the world for an animal in need. Adopt today.
+                </p>
+                <button class="bnt"><a href="https://www.petfinder.com/" target="_blank">Learn more</a></button>
+            </div> 
+        </section>
+        <section class="second-section">
+            <div class="container-second-section">
+                <img class="img-second" src="img/black-dog.jpg" alt="">
+                <p>At PetLove we're dedicated to helping animals find loving homes.<br> Our mission is to provide a safe and caring environment for <br>animals in need, and to connect them with responsible and loving<br> adoptive families.
+                    Thank you for your interest at PetLove, and for<br> your commitment to helping animals in need. Together, we can make <br>a difference in the lives of countless animals and their adoptive families."</p>
+            </div>
+        </section>
+        <section class="third-section">
+            <div class="container-third-section">
+                <div class="card">
+                    <h2>Step 1: Find an animal you love</h2>
+                    <p>Search our database of adoptable animals to find the perfect match for you and your family.</p>
+                    <button class="bnt">Learn More</button>
+                  </div>
+                  <div class="card">
+                    <h2>Step 2: Fill out an adoption application</h2>
+                    <p>Complete our adoption application online or in person to start the adoption process.</p>
+                    <button class="bnt">Learn More</button>
+                  </div>
+                  <div class="card">
+                    <h2>Step 3: Meet the <br> animal</h2>
+                    <p>Visit our shelter to meet the animal you're interested in adopting and spend some time getting to know them.</p>
+                    <button class="bnt">Learn More</button>
+                  </div>
+                  <div class="card">
+                    <h2>Step 4: Complete the adoption process</h2>
+                    <p>If you and the animal are a good match, complete the adoption paperwork and pay the adoption fee.</p>
+                    <button class="bnt">Learn More</button>
+                  </div>
+            </div>
+        </section>
+        <section class="fourth-section">
+            <div class="donor-fourth-section">
+                <h1>Become a Monthly Donor</h1>
+                <div class="donor-button">
+                    <button class="bnt2"><a href="./collaboration.html" target="_blank">1</a> <img src="./img/currency-euro.svg" style="height: 25px;" ></button>
+                    <button class="bnt2"><a href="./collaboration.html" target="_blank">5</a> <img src="./img/currency-euro.svg"  style="height: 25px;"></button>
+                    <button class="bnt2"><a href="./collaboration.html" target="_blank">10</a><img src="./img/currency-euro.svg" style="height: 25px;"></button>
+                    <button class="bnt2"><a href="./collaboration.html" target="_blank">50</a><img src="./img/currency-euro.svg" style="height: 25px;"></button>
+                </div>
+            </div>
+            <div class="container-fourth-section">
+                <div class="background-fourth-section">
+                    <h2>With Best Friends, you are working to save<br> the lives of cats and dogs all across America,<br> giving pets second chances and happy homes.</h2>
+                </div>     
+            </div>
+        </section>
+        <section class="fifth-section-video">
+            <div class="video">
+                <video class="videoPlayer" src="./video/1-video.mp4" controls poster="./img/1-poster.png"></video>
+                <video class="videoPlayer" src="./video/2-video.mp4" controls poster="img/2-poster.png"></video>
+                <video class="videoPlayer" src="./video/3-video.mp4" controls poster="img/3-poster.png"></video>
+            </div>
+        </section>
+        <section class="fifth-section">
+             <div class="gallery-adopt">
+                <div id="animal-cards">
+                    <div class="lightbox" onclick="closeLightbox()">
+                        <img id="lightboxImage" />
+                    </div>      
+                </div>
+            </div> 
+        </section>
+        <div id="map-local">
+            <h1>Pet adoption places</h1>
+            <div id="map"></div>
+        </div>
+        <div class="submit">
+            <div class="register">
+                <form class="reg-form">
+                    <h2>Subscribe to join our family. Make an animal happy!</h2>
+                    <input type="text" name="first-name" placeholder="Name" required>
+                    <input type="text" name="last-name" placeholder="LastName" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <button type="submit">SIGN UP</button>
+                </form>       
+            </div>
+        </div>
+        <footer>
+            <div class="social">
+                <i class="fa-solid fa-dog" style="color: #ffffff;"></i>
+                <h3>Do good, adopt</h3>
+                <div class="info">
+                    <p>CONTACT US</p>
+                    <P>LOCATIONS</P>
+                    <p>CHARITY NAVIGATOR</p>
+                    <p>PRIVACY POLICY</p>
+                    <p>TERMS OF SERVICE</p>
+                    <p>HOW TO GET</p>     
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i>FACEBOOK</a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i>INSTAGRAM</a>
+                    <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-square-youtube"></i>YOUTUBE</a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-square-twitter"></i>TWITTER</a>
+                  </div>
+                  <p>&copy 2023 Emerson Nascimento</p>
+            </div>     
+        </footer>    
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script src="script.js"></script>
+</body>
+</html>

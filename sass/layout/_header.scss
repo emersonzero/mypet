@@ -1,0 +1,30 @@
+.content-header {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.129);
+    position: fixed;
+   // padding-left: 30rem;
+}
+.logo{
+    border-radius: 100px;
+    margin-top: 5px;
+    width: 70px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    font-size: 25px;
+}
+.nav-list a{
+    color: white;
+    font-weight: 900px;
+}
+.nav-list a:hover{
+    color: yellow;
+}

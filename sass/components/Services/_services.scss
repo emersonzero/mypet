@@ -1,0 +1,52 @@
+.services{
+    height: 80vh;
+}
+.container-services{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagens-services{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.imagens-services > h1{
+    font-size: 30px;
+}
+
+.imagens-services img{
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+}
+.card-service{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h2{
+        font-size: 35px;
+    }
+    p{
+        color: black;
+        font-size: 20px;
+    }
+}
+
+.ttt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    h1{
+        font-size: 70px;
+    }
+    
+}

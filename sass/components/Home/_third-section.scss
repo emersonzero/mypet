@@ -1,0 +1,72 @@
+.container-third-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../img/black-white-dog.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.third-section{
+    background-color: rgba(128, 128, 128, 0.199);
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    margin: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .card h2 {
+    color: white;
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  /* Estilos para os textos dos cards */
+  .card p {
+    color: white;
+    margin-bottom: 0;
+    font-size: 1.7rem;
+    line-height: 1.5;
+  }
+
+@media (max-width: 375px),(max-width: 820px) {
+  .container-third-section {
+      height: auto;
+      background-size: cover;
+      flex-wrap: wrap;
+      background-repeat: no-repeat;
+      background-position: left left;
+  }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      padding: 15px;
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+    }
+
+    .card p {
+      font-size: 1.2rem;
+    }
+}
+
+  
+  

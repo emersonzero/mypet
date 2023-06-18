@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body-collaboration">
+        <!-- <h1>READY TO CHANGE THE WORLD?</h1> -->
+        <div class="collaboration-img"></div>
+        <div class="collaboration-container">
+            <form class="form-collaboration" action="caminho/do/destino" method="post">
+                <div>
+                  <label for="quantia">Amount:</label>
+                  <br>
+                  <div class="bnt-collaboration">
+                      <button type="submit" name="quantia" value="1.00">1,00€</button>
+                      <button type="submit" name="quantia" value="5.00" >5,00€</button>
+                      <button type="submit" name="quantia" value="10.00">10,00€</button>
+                      <button type="submit" name="quantia" value="50.00">50,00€</button>
+                  </div>
+                </div>
+                <div class="email-adt">
+                  <label for="email">Email *</label>
+                  <br>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="radio-adt">
+                  <input type="radio" id="particular" name="tipo" value="particular" required>
+                  <label for="particular">Particular</label>
+                  <br>
+                  <input type="radio" id="empresa" name="tipo" value="empresa" required>
+                  <label for="empresa">Company</label>
+                </div>
+                <div class="checkbox-adt">
+                  <input type="checkbox" id="termos" name="termos" required>
+                  <label for="termos">I accept the terms and conditions and that PetLove will use my data for future communications by clicking on "Next"</label>
+                </div>
+                <br>
+                <button class="bnt-adt" type="submit">Next -></button>
+              </form>
+        </div>
+      </div>
+        </body>
+    </div>
+</html>

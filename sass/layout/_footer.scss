@@ -1,0 +1,82 @@
+p{
+    color: white;
+}
+
+.social{
+    background-color: black;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.fa-solid{
+    font-size: 50px;
+    padding-top: 50px;
+}
+.info{
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+    
+}
+.info > p,h3,a{
+    color: white;
+}
+h3{
+    font-size: 30px;
+}
+.info > p:hover{
+    color: rgb(4, 124, 165);
+    transform: translateY(-2px);
+}
+a,i{
+    font-size: 20px;
+    padding: 10px;
+ 
+}
+.social-icons{
+    display: flex;
+}
+
+a:hover{
+    transform: translateY(-2px);
+    .fa-square-facebook{
+        color: blue;
+    }
+}
+a:hover{
+    .fa-instagram{
+        color: rgb(119, 51, 153);
+    }
+}
+a:hover{
+    .fa-square-youtube{
+        color: red;
+    }
+}
+a:hover{
+    .fa-square-twitter{
+        color: rgb(3, 142, 189);
+    }
+}
+
+
+@media (max-width: 480px){
+   .social{
+    height: auto;
+   }
+    .info{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .social-icons{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

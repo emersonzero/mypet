@@ -1,0 +1,39 @@
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .nav-list{
+        display: none;
+        
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+      background-color: transparent;
+      padding-right: 30px;
+      cursor: pointer;
+    }
+    mobile-menu{
+        display: block;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;    
+    }
+    .content-header{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content:flex-start;
+    }
+    .open{
+        display: block;
+    }
+}

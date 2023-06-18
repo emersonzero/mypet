@@ -1,0 +1,41 @@
+.bnt {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: solid 3px white;
+    color: white;
+    font-weight: 500px;
+    font-size: 20px;
+    transition: all 400ms ease-in;
+}
+.bnt:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.donor-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.bnt2{
+    color:white;
+    font-size: 40px;
+    width: 200px;
+    height: 70px;
+    background-color: #2ecc71;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .bnt2:hover {
+    background-color: #27ae60;
+    color: white;
+  }
+.bnt2 a {
+  all: unset;
+}
