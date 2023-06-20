@@ -4,8 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.129);
+    background-color: rgba(0, 0, 0, 0.401);
     position: fixed;
+    cursor: pointer;
    // padding-left: 30rem;
 }
 .logo{
@@ -28,3 +29,4 @@
 .nav-list a:hover{
     color: yellow;
 }
+

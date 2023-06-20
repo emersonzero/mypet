@@ -28,9 +28,8 @@
     .video {
         background-color:(rgba(29, 29, 29, 0.344));
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        gap: 20px;
         height: 100%;
     }
 }

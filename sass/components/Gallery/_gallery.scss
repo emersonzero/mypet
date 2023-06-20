@@ -16,3 +16,18 @@
     font-size: 50px;
     padding-top: 90px
 ;}
+
+@media (max-width: 375px),(max-width: 820px) {
+  .content-header{
+    display: none;
+  }
+  .gallery {
+    display: flex;
+    justify-content: center;
+  }
+  .gallery img {
+    width: 25rem;
+    height: 31.25rem;
+    //margin-top: 10%;
+  }
+}
