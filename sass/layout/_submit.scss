@@ -33,7 +33,17 @@
     background-color: rgb(44, 131, 160);
     color: white;
     border-radius: 3px;
+    cursor: pointer;
+   
 }
+.reg-form > button:active {
+    transform: translateY(1px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  }
+.reg-form > button:hover {
+   background-color: rgb(31, 147, 33);
+  }
+ 
 .reg-form > h2 {
     font-size: 50px;
     color: white;

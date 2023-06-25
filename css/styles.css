@@ -400,24 +400,6 @@ html, body {
   text-align: center;
 }
 
-.adopt-button {
-  width: 18.75rem;
-  background-color: rgb(69, 200, 69);
-  color: white;
-  box-shadow: 1px 1px 1px 1px rgba(31, 31, 31, 0.177);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.9s;
-  /*  transition: all 400ms ease-in 0s; */
-}
-
-.adopt-button:hover {
-  background-color: green;
-  color: black;
-}
-
 /* style lightbox */
 .lightbox {
   display: none;
@@ -504,10 +486,11 @@ html, body {
   font-size: 40px;
   width: 200px;
   height: 70px;
-  background-color: #2ecc71;
+  background-color: rgb(44, 131, 160);
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .bnt2:hover {
@@ -517,6 +500,23 @@ html, body {
 
 .bnt2 a {
   all: unset;
+}
+
+.adopt-button {
+  width: 18.75rem;
+  background-color: rgb(44, 131, 160);
+  color: white;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.9s;
+}
+
+.adopt-button:hover {
+  background-color: rgb(138, 184, 138);
+  color: white;
 }
 
 .body-collaboration {
@@ -894,6 +894,16 @@ html, body {
   background-color: rgb(44, 131, 160);
   color: white;
   border-radius: 3px;
+  cursor: pointer;
+}
+
+.reg-form > button:active {
+  transform: translateY(1px);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.reg-form > button:hover {
+  background-color: rgb(31, 147, 33);
 }
 
 .reg-form > h2 {
