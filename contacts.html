@@ -18,15 +18,27 @@
                 <img class="logo" src="img/logo.png" alt="">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="services.html"><a href="services.html">Services</a></a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contacts.html">Contact</a></li>
             </ul>
-        </nav>    
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/hamburguer.png" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </div> 
     </header>
         <div class="submit">
             <div class="register">
-                <form class="reg-form">
+                <form class="reg-form reg-form-media">
                     <h2>Contact us!</h2>
                     <input type="text" name="first-name" placeholder="Name" required>
                     <input type="text" name="last-name" placeholder="LastName" required>
