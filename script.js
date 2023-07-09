@@ -49,6 +49,18 @@ fetch('https://api.thedogapi.com/v1/images/search?limit=6')
   
 // fifth-section
 
+//Video
+
+const videos = document.querySelectorAll('.videoPlayer');
+
+    videos.forEach(video => {
+      video.addEventListener('ended', () => {
+        video.currentTime = 0; // Resets the playback position to the beginning
+      });
+    });
+
+//API image adopt
+
 const dogApiUrl = 'https://dog.ceo/api/breeds/list/all';
 const catApiUrl = 'https://api.thecatapi.com/v1/images/search?limit=6';
 
@@ -230,3 +242,4 @@ map.scrollWheelZoom.disable();
 //services
 
 //const imagensServices =  document.querySelector('.imagens-services')
+

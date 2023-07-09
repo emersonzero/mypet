@@ -5,18 +5,18 @@
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
-   /*  position: absolute; */
 }
+
 .register{
-   
-    width: 600px;
-    height: 500px;
-    position: relative;
-    top: 25%;
-    left: 10%;
+   display: flex;
+   justify-content: space-around;
+   align-items:end;
+   height: 85vh;
 }
+
 .reg-form{
     display: flex;
+    width: 500px;
     flex-direction: column;
     gap: 20px;
 }
@@ -49,16 +49,19 @@
     color: white;
 }
 
-
 @media (max-width: 480px),(max-width: 820px) {
   
    .register{
-    
+    display: flex;
+    justify-content: left;
+    align-items:end;
+    height: 85vh;
+
     .reg-form{
-        width: 20rem;
+        width: 21rem;
     }
     h2{
-        font-size: 1.9rem;
+        font-size: 2rem;
         text-align: justify;
     }
     .reg-form-media > h2{
