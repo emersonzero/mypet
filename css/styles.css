@@ -543,25 +543,42 @@ html, body {
   border-radius: 10px;
 }
 
-.bnt-collaboration button {
-  width: 6.875rem;
+.bnt-collaboration {
+  display: flex;
+  gap: 25px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.bnt-collaboration label {
+  padding: 5px;
+  width: 5.875rem;
   height: 3.125rem;
   border-radius: 10px;
   background-color: transparent;
   border: solid 2px rgb(28, 171, 226);
   color: rgb(28, 171, 226);
   font-weight: 500px;
-  font-size: 20px;
-  transition: all 600ms ease-in;
+  font-size: 28px;
+  transition: all 50ms ease-in;
   cursor: pointer;
 }
 
-.bnt-collaboration button:first-child {
+.bnt-collaboration label:first-child {
   background-color: rgb(28, 171, 226);
   color: white;
 }
 
-.bnt-collaboration button:hover {
+.bnt-collaboration label:hover {
+  background-color: rgb(28, 171, 226);
+  color: white;
+}
+
+.bnt-collaboration input[type=radio] {
+  display: none;
+}
+
+.bnt-collaboration input[type=radio]:checked + label {
   background-color: rgb(28, 171, 226);
   color: white;
 }
@@ -616,7 +633,11 @@ html, body {
   .collaboration-container {
     width: 100vw;
   }
-  .bnt-collaboration button {
+  .bnt-collaboration {
+    display: flex;
+    gap: 8px;
+  }
+  .bnt-collaboration label {
     width: 4.9rem;
     height: 3rem;
   }
@@ -1086,6 +1107,15 @@ a:hover .fa-square-twitter {
 @media screen and (max-width: 700px) {
   .nav-list {
     display: none;
+  }
+  .nav-list {
+    background-color: rgb(22, 113, 143);
+    width: 26rem;
+    height: 100vh;
+  }
+  .nav-list a {
+    font-size: 3rem;
+    line-height: 120px;
   }
   .mobile-menu-icon {
     display: block;

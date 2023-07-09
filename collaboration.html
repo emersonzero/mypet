@@ -8,19 +8,27 @@
     <title>Document</title>
 </head>
 <body>
+  
     <div class="body-collaboration">
         <!-- <h1>READY TO CHANGE THE WORLD?</h1> -->
         <div class="collaboration-img"></div>
         <div class="collaboration-container">
             <form class="form-collaboration" action="caminho/do/destino" method="post">
                 <div>
-                  <label for="quantia">Amount:</label>
+                  <label class="teste" for="quantia">Amount:</label>
                   <br>
                   <div class="bnt-collaboration">
-                      <button type="submit" name="quantia" value="1.00">1,00€</button>
-                      <button type="submit" name="quantia" value="5.00" >5,00€</button>
-                      <button type="submit" name="quantia" value="10.00">10,00€</button>
-                      <button type="submit" name="quantia" value="50.00">50,00€</button>
+                    <input type="radio" id="quantia-1" name="quantia" value="1.00">
+                    <label for="quantia-1">1,00€</label>
+                
+                    <input type="radio" id="quantia-5" name="quantia" value="5.00">
+                    <label for="quantia-5">5,00€</label>
+                
+                    <input type="radio" id="quantia-10" name="quantia" value="10.00">
+                    <label for="quantia-10">10,00€</label>
+                
+                    <input type="radio" id="quantia-50" name="quantia" value="50.00">
+                    <label for="quantia-50">50,00€</label>
                   </div>
                 </div>
                 <div class="email-adt">

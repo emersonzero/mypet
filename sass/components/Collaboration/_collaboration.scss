@@ -22,27 +22,43 @@
     padding: 15px;
     border-radius: 10px;
 }
-.bnt-collaboration button{
-    width: 6.875rem;
+.bnt-collaboration{
+    display: flex;
+    gap: 25px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.bnt-collaboration label{
+    padding: 5px;
+    width: 5.875rem;
     height: 3.125rem;
     border-radius: 10px;
     background-color: transparent;
     border: solid 2px rgb(28, 171, 226);
     color: rgb(28, 171, 226);
     font-weight: 500px;
-    font-size: 20px;
-    transition: all 600ms ease-in;
+    font-size: 28px;
+    transition: all 50ms ease-in;
     cursor: pointer;
 }
-.bnt-collaboration button:first-child {
+.bnt-collaboration label:first-child {
     background-color: rgb(28, 171, 226);
     color: white;
 }
 
-.bnt-collaboration button:hover{
+.bnt-collaboration label:hover{
     background-color: rgb(28, 171, 226);
     color: white;
 }
+.bnt-collaboration input[type="radio"] {
+    display: none;
+  }
+
+  .bnt-collaboration input[type="radio"]:checked + label {
+    background-color: rgb(28, 171, 226);
+    color: white;
+  }
 
 .email-adt input{
     background-color: transparent;
@@ -93,7 +109,11 @@
     .collaboration-container{
         width: 100vw;
     }
-    .bnt-collaboration button{
+    .bnt-collaboration{
+        display: flex;
+        gap: 8px;
+    }
+    .bnt-collaboration label{
         width: 4.9rem;
         height: 3rem;
     }

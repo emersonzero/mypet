@@ -64,7 +64,7 @@ fetch(dogApiUrl)
           const imageURL = data.message;
           const name = getRandomName();
           const age = getRandomAge();
-          const description = `Nome: ${name}, Raça: ${breed}, Idade: ${age}`;
+          const description = `Name: ${name}, Breed: ${breed}, Age: ${age}`;
 
           createCard(imageURL, description);
         });
@@ -114,7 +114,7 @@ function createCard(imageURL, description) {
 
   const adoptButton = document.createElement('button');
   adoptButton.className = 'adopt-button';
-  adoptButton.textContent = 'Adotar';
+  adoptButton.textContent = 'Adopt';
 
   card.appendChild(image);
   card.appendChild(desc);
